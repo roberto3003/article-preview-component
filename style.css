@@ -40,7 +40,7 @@
     --light: white;
 	--accent: darkorchid;
 	--grey: hsl(227, 10%, 46%);
-	--mbe: 2em;
+	--mbe: 2rem;
 	--padding: 1em;
 	--gap: 2em;
 	--shadow: 0 0.25vw 1vw  0 rgba(0,0,0,0.5);
@@ -178,7 +178,39 @@
 
 .hero img{
   width: 100%;
+  min-width: 320px;
   height: auto;
+}
+
+article  {
+background-color: RGBa(255, 255, 255, 0.7);
+}
+
+.author img {
+  justify-content: space-between;
+height: 4em;
+width: 4em;
+border-radius: 50%;
+margin-inline-end: var(--padding);
+}
+.share {
+  display: flex;
+  justify-content: center;
+  margin-inline-start:auto;
+  background-color: var(--main-bg-color);
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.share img {
+align-self: center;
+  width: 1.25em;
+  height: 1.5em;
+  background-color: var(--main-bg-color);
+  padding: 0.25em;
 }
 
 .card {
