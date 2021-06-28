@@ -103,15 +103,6 @@
   align-items: center;	
 }
 
-.container {	
-  display: grid;
-  width: clamp(320px, 90vw, 80em);
-}
-
-.container > * {
-  padding: var(--padding);
-}
-
 .bg-image {
 /*	background-image: url('./images/bg-desktop.svg'); */
 	background-repeat: no-repeat;
@@ -157,16 +148,6 @@
   overflow: hidden;
 }
 
-  .responsive {
-  display: grid;
-  width: clamp(320px, 90vw, 80em);
-  grid-template-columns: repeat(
-  auto-fit,
-  minmax(10em, 1fr));
-  gap: var(--gap);
-  background-color: var(--light);
-  }
-
 .flex{
   display: flex;
 }
@@ -176,13 +157,27 @@
   flex-direction: column;
 }
 
-.hero img{
-  width: 100%;
-  min-width: 320px;
-  height: auto;
+  .responsive {
+  display: flex;
+  flex-wrap: wrap;
+  width: clamp(320px, 90vw, 60em);
+  background-color: var(--light);
+  }
+
+.hero {
+  width: 5em;
+  flex-grow: 3;
+background-image: url("./images/drawers.jpg"); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 70%;
 }
 
 article  {
+  width: 5em;
+  flex-grow: 5;
+  flex-shrink: 0;
+  flex-basis: 5em;
 background-color: RGBa(255, 255, 255, 0.7);
 }
 
@@ -193,6 +188,7 @@ width: 4em;
 border-radius: 50%;
 margin-inline-end: var(--padding);
 }
+
 .share {
   display: flex;
   justify-content: center;
@@ -211,13 +207,6 @@ align-self: center;
   height: 1.5em;
   background-color: var(--main-bg-color);
   padding: 0.25em;
-}
-
-.card {
-  display: grid;
-  padding: calc(var(--padding)*2);
-  border-radius: var(--radius);
-  overflow: hidden;
 }
 
   /* A elements that don't have a class get default styles */
