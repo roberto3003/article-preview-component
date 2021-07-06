@@ -127,13 +127,15 @@ hr {
   gap: 1em;
 }
 
-.row-reverse {
-  flex-direction: row-reverse;
+.hero {
+  background-image: url('./images/drawers.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 65% 50%;
+  min-height:33vh;
+  min-width: 300px;
 }
 
-.wrap-reverse {
-  flex-wrap: wrap-reverse;
-}
 
 .center {
   text-align: center;
@@ -153,7 +155,8 @@ hr {
   margin-inline-end: 1em;
 }
 
-.testimonial img {
+.testimonial-img img {
+  min-width: initial;
   height: 100%;
   width: auto;
   border-radius: 50%;
