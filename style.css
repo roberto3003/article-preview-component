@@ -4,20 +4,6 @@
   --font-size: clamp(1rem, 1.25vw, 2.5rem);
 }
 
-/* dark-theme colors */
-:root {
-  --bg-color: midnightblue;
-  --text: white;
-  --text-contrast: rgba(46, 49, 49, 1);
-  --theme: lightsteelblue;
-  --contrast: rebeccapurple;
-  --medium: indigo;
-  --accent: coral;
-  --shadow: unset;
-  --shadow-deep: unset;
-}
-
-
 /* light-theme colors */
 :root {
   --bg-color: whitesmoke;
@@ -30,7 +16,18 @@
   --shadow: 0 0.25vw 1vw  0 rgba(0,0,0,0.2);
   --shadow-deep: 0 0.5vw 2vw  0 rgba(0,0,0,0.2);
 }
-
+/* dark-theme colors */
+:root {
+  --bg-color: black; 
+  --text: white;
+  --text-contrast: rgba(46, 49, 49, 1);
+  --theme: lightsteelblue;
+  --contrast: darkslategrey;
+  --medium: var(--text-contrast);
+  --accent: coral;
+  --shadow: unset;
+  --shadow-deep: unset;
+}
 
 
 html {
