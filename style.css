@@ -66,6 +66,10 @@ p {
   min-height: 100vh;
 }
 
+footer .wrapper {
+  min-height: initial;
+}
+
 .container {
   flex-direction: column;
   width: 80vw; 
@@ -80,7 +84,6 @@ p {
 }
 
 .two > *, .three > *{
-  flex-grow: 1;
   flex-basis: calc(( 16em - 35%) * 999);
 }
 
@@ -90,6 +93,7 @@ p {
 }
 
 .hero {
+  flex-grow: 2;
   background-image: url('./images/drawers.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -99,6 +103,7 @@ p {
 }
 
 article {
+  flex-grow: 3;
   background-color: var(--medium);
   padding: var(--padding);
 }
@@ -148,6 +153,7 @@ article  footer {
 }
 
 .footer {
+  background-color: var(--contrast);
   align-items: start;
 }
 
